@@ -2,7 +2,7 @@ import os
 import tkinter as tk
 from tkinter import font
 
-from gui.components.custom_entry import CustomEntry 
+from .components.custom_entry import CustomEntry 
 
 
 class MainWindow(tk.Tk):
@@ -11,7 +11,6 @@ class MainWindow(tk.Tk):
 
     BASE_DIR = os.path.dirname(__file__)
     FONT_PATH = os.path.join(BASE_DIR, "fonts", "Lato-Regular.ttf")
-    print(FONT_PATH)
 
     def __init__(self):
         super().__init__()

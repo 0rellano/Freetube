@@ -18,7 +18,7 @@ class CustomEntry(tk.Entry):
         self['fg'] = self.placeholder_color
 
     def on_entry_focus_in(self, event):
-        if self['fg'] == self.placeholder_color:
+        if self.get() == self.placeholder:
             self.delete(0, "end")
             self['fg'] = self.default_fg_color
 

@@ -15,13 +15,13 @@ class MainWindow(tk.Tk):
     def __init__(self):
         super().__init__()
 
-        # window configuration
+        # SETTINGS WINDOW
         self.title("Freetube")
         self.geometry(self.evauluate_geometry(self.WINDOW_WIDTH, self.WINDOW_HEIGHT))
-
         custom_font = font.Font(family="family_lato", name="Lato", font=self.FONT_PATH)
         self.option_add("*Font", custom_font)
 
+        # COMPONENTS WINDOW
         self.entry_url = CustomEntry(
             self,
             width=50,
